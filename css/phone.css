@@ -1,0 +1,202 @@
+.topbar{
+    flex-wrap: wrap;
+    position: relative;
+    height: 100px;
+}
+.topbar::before{
+    content: " ";
+    height: 100%;
+    width: 100vw;
+    
+}
+.topbar #topSearch {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.topbar input[type=search] {
+    padding: 2px 6px;
+}
+.header{
+    position: relative;
+    flex-wrap: wrap;
+
+}
+.header::before{
+    content: "";
+    height: 120px;
+    top: 0;
+}
+
+.header .compName{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header .navbar{
+    padding: 0px;
+}
+.header ul li{
+    margin-left: 2px;
+    border-radius: 3px;
+}
+.header ul li a{
+    padding: 2px 4px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.intro::before{
+    content: "";
+    height: 100%;
+    top: 0;
+}
+.intro .intro-card{
+    margin: 5px 0px;
+    width: 170px;
+}
+.intro .intro-card img{
+    width: 170px;
+    border: 2px solid white;
+    outline: 1px solid black;
+}
+.intro h3{
+    font-size: 1rem;
+    width: 170px;
+}
+.intro p{
+    padding: 3px 4px;
+    font-size: .8rem;
+    width: 170px;
+}
+.intro small a{
+    font-weight: 600;
+    width: 170px;
+    font-size: .7rem;
+    
+}
+/* wrapper card */
+
+.wrapper{
+    margin: 0;
+}
+.wrapper #card{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wrapper .cont-card{
+    width: 227px;
+    margin-top: 10px;
+    padding: 5px 0px;
+}
+
+.wrapper #card h3{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.wrapper #card img{
+    width: 200px;
+}
+
+.wrapper #card p{
+    width: 200px;
+    font-size: .8rem;
+}
+.wrapper #card small{
+    width: 100%;
+    text-align: right;
+}
+.wrapper #card small a{
+    padding-right: 20px;
+    font-size: .7rem;
+}
+.section{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section .lside {
+    width: 100%;
+    margin: 0px;
+    padding: 4px 7px;
+    height: auto;
+}
+.section .lside h3 {
+    margin: 0;
+    padding: 5px 5px;
+}
+.section .lside p {
+    color: black;
+    font-size: .8rem;
+    padding: 5px 8px;
+}
+.section .rside{
+    width: 100%;
+}
+.section .rside ul li {
+    padding: 3px 0px;
+}
+.section .rside ul li a {
+    padding: 2px 5px;
+    font-size: 0.7rem;
+}
+/* footer code */
+.footer {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+}
+.footer .inquiry, .info, .detail {
+    width: 250px;
+}
+.footer .inquiry, .info, .detail {
+    padding: 0px;
+}
+
+.footer h6 {
+    font-size: .9rem;
+    padding: 3px 0px;
+    margin: 3px 3px;
+}
+.footer span {
+    font-size: .8rem;
+    padding: 2px 0px;
+}
+
+.footer .inquiry input[type=email] {
+    width: 180px;
+    padding: 0px;
+    margin-top: 5px;
+}
+.footer .inquiry .btn {
+    padding: 0px 2px;
+    border-radius: 4px;
+}
+.footer a {
+    padding: 2px 2px;
+    margin: 1px 0px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.copyright {
+    font-size: .8rem;
+    position: relative;
+}
+
+.copyright::before {
+    content: "";
+    width: 100vw;
+    height: 40px;
+    position: absolute;
+    top: 0;
+}

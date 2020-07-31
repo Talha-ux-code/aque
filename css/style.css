@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* top search and social link  */
+.topbar, .header, .intro, .wrapper, .footer, .copyright{
+    width: 996px;
+    margin: 0 auto;
+    padding: 0;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.topbar::before{
+    content: " ";
+    position: absolute;
+    background-color: rgb(68, 128, 224);
+    height: 60px;
+    width: 100vw;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    
+}
+.topbar #social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .topbar #social a{
+    display: block;
+    padding: 2px;
+    margin-right: 5px;
+}
+.topbar #topSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.topbar input[type=search]{
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 3px 20px;
+    margin-right: 2px;
+    outline: none;
+}
+.topbar input::placeholder{
+    color: white;
+    font-size: .8rem;
+}
+.topbar input:focus{
+    color: white;
+}
+.topbar .btn{
+    background: none;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-right: 4px;
+    font-size: .9rem;
+}
+.topbar .btn:hover{
+    background-color: rgb(255, 255, 255);  
+    border: 1px solid black;
+    color: black;
+}
+
+/* header navbar and company name */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0px;
+}
+.header::before{
+    content: "";
+    background-color: rgb(68, 164, 255);
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    z-index: -2;
+    top: 60px;
+    right: 0;
+}
+.header .compName{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.header .navbar{
+    padding: 0px 3px;
+}
+.header ul li{
+    color: white;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.header ul li a{
+    display: block;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.header ul li a:hover{
+    background-color: green;
+    color: white;
+    border-radius: 8px;    
+}
+
+/* intro to compnay name product */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro::before{
+    content: "";
+    background-color: rgb(68, 177, 255);
+    position: absolute;
+    top: 180px;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+.intro .intro-card{
+    width: 215px;
+    margin: 43px 0px;
+}
+.intro .intro-card img{
+    width: 215px;
+    border: 3px solid white;
+    outline: 1px solid black;
+}
+.intro .intro-card h3, p, small{
+    color: white;
+}
+.intro h3{
+    padding: 7px 9px;
+    margin: 3px 0px;
+    border-bottom: 1px dotted black;
+}
+.intro p{
+    padding: 7px 9px;
+    margin: 3px 0px;
+}
+.intro small a{
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+}
+.intro small a:hover{
+    color: white;
+}
+
+/* wrapper set */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.wrapper #card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+}
+.wrapper .cont-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px 0px;
+    background-color: rgb(247, 247, 247);
+}
+
+.wrapper #card h3{
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding: 5px 0px;
+    border-bottom: 1px dotted black;
+}
+.wrapper #card img{
+    width: 240px;
+    height: 90px;
+    margin-bottom: 25px;
+    border: 3px solid white;
+    outline: 1px solid black;
+}
+
+.wrapper #card p{
+    display: inline-block;
+    color: black;
+    /* text-align: justify; */
+    width: 235px;
+    padding: 10px 0px;
+    font-size: .9rem;
+}
+
+.wrapper #card small{
+    width: 100%;
+    text-align: right;
+}
+.wrapper #card small a{
+    text-decoration: none;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+/* section */
+.section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section .lside{
+    width: 70%;
+    padding: 10px 20px;
+    height: 235px;
+    margin-right: 10px;
+}
+.section .lside p{
+    color: black;
+    font-size: 1rem;
+    margin: 4px 2px;
+    
+}
+.section .lside h3{
+    font-size: 1.8rem;
+    margin: 15px 6px;
+    font-weight: normal;
+}
+
+
+.section .rside{
+    width: 30%;
+    height: 235px;
+}
+.section .rside ul{
+    padding: 6px 15px;
+    margin: 0px;
+    background-color: rgb(247, 247, 247);
+}
+.section .rside ul li{
+    list-style: none;
+    border-bottom:1px dotted black ;
+    padding: 5px 4px;
+}
+.section .rside ul li a{
+    list-style: none;
+    padding: 2px 5px;
+    text-decoration: none;
+    font-size: .8rem;
+}
+.section .rside ul li a:hover{
+    color: rgb(255, 138, 55);
+}
+
+/* footer detail */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.footer::before{
+    content: "";
+    background-color: rgb(68, 164, 255);
+    position: absolute;
+    top: 82.1rem;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+.footer .inquiry, .info, .detail{
+    padding: 0px 11px;
+    width: 33%;
+    height: 200px;
+}
+.footer h6{
+    font-size: 1.2rem;
+    color: rgb(231, 229, 229);
+    border-bottom: 1px dotted rgb(231, 229, 229);
+    padding: 9px 0px;
+    margin: 10px 5px;
+}
+.footer span{
+    font-size: .9rem;
+    color: white;
+    display: block;
+    padding: 2px 0px;
+}
+.footer a{
+    display: inline-block;;
+    color: white;
+    padding: 2px 5px;
+    margin: 1px 3px;
+    font-size: .9rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer a:hover{
+    color: rgb(209, 209, 209);
+}
+.footer .inquiry input[type=email]{
+    width: 220px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-top: 13px;
+    border: 1px solid rgb(209, 209, 209);
+}
+.footer .inquiry .btn{
+    padding: 2px 4px;
+    color: white;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+}
+.footer .inquiry .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.copyright{
+    text-align: right;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+}
+.copyright::before{
+    content: "";
+    background-color: rgb(68, 128, 224);
+    color: white;
+    width: 100vw;
+    height: 40px;
+    position: absolute;
+    top: 94.6rem;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+

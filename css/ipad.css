@@ -1,0 +1,225 @@
+.topbar, .header, .intro, .wrapper, .footer, .copyright{
+    width: 100%;
+}
+
+.topbar{
+    justify-content: space-around;
+    height: 60px;
+}
+.topbar::before{
+    content: " ";
+    position: absolute;
+    background-color: rgb(68, 128, 224);
+    height: 60px;
+    width: 100vw;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    
+}
+/* navbarr */
+.header{
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+.header::before{
+    content: "";
+    background-color: rgb(68, 164, 255);
+    height: 120px;
+    top: 0;
+}
+
+.header .compName{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header .navbar{
+    padding: 0px 1px;
+}
+.header ul li{
+    margin-left: 2px;
+    border-radius: 3px;
+}
+.header ul li a{
+    display: block;
+    padding: 3px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* information */
+.intro{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+}
+.intro::before{
+    content: "";
+    height: 100%;
+    top: 0;
+}
+.intro .intro-card{
+    margin: 35px 0px;
+    width: 190px;
+}
+
+.intro .intro-card h3, p, small{
+    color: white;
+}
+.intro .intro-card img{
+    border: 3px solid white;
+    outline: 1px solid black;
+    width: 190px;
+}
+.intro h3{
+    padding: 3px 0px;
+    font-size: 1.3rem;
+    border-bottom: 1px dotted black;
+    width: 190px;
+}
+.intro p{
+    padding: 3px 4px;
+    font-size: .9rem;
+    width: 190px;
+}
+.intro small a{
+    float: right;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+/* wrapper card */
+
+.wrapper{
+    margin: 0;
+}
+.wrapper #card{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wrapper .cont-card{
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+.wrapper #card h3{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.wrapper #card img{
+    width: 240px;
+}
+
+.wrapper #card p{
+    width: 235px;
+    font-size: .9rem;
+}
+
+.wrapper #card small{
+    width: 100%;
+    text-align: right;
+}
+.wrapper #card small a{
+    padding-right: 20px;
+}
+
+
+.section .lside {
+    width: 70%;
+    padding: 0px;
+    padding-left: 3px;
+    height: 235px;
+    margin: 0px;
+}
+.section .lside h3 {
+    margin: 0;
+}
+
+.section .lside p {
+    color: black;
+    font-size: .9rem;
+    padding: 0 5px;
+    margin: 0px 0px;
+}
+
+
+
+.section .rside ul {
+    padding: 0px 7px;
+    margin: 0px;
+    background-color: rgb(247, 247, 247);
+}
+
+.section .rside ul li {
+    padding: 3px 0px;
+}
+.section .rside ul li a {
+    padding: 2px 5px;
+    font-size: 0.7rem;
+}
+
+/* footer code */
+.footer {
+    position: relative;
+    height: 200px;
+    border: 1px solid black;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 200px;
+}
+.footer .inquiry, .info, .detail {
+    padding: 0px 4px;
+}
+
+.footer h6 {
+    font-size: 1rem;
+    /* color: rgb(231, 229, 229); */
+    /* border-bottom: 1px dotted rgb(231, 229, 229); */
+    padding: 6px 0px;
+    margin: 7px 5px;
+}
+.footer span {
+    font-size: .8rem;
+    /* color: white; */
+    /* display: block; */
+    padding: 2px 0px;
+}
+
+.footer .inquiry input[type=email] {
+    width: 200px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.footer .inquiry .btn {
+    padding: 0px 2px;
+    border-radius: 4px;
+}
+.footer a {
+    padding: 2px 2px;
+    margin: 1px 0px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.copyright {
+    font-size: .8rem;
+    position: relative;
+}
+
+.copyright::before {
+    content: "";
+    width: 100vw;
+    height: 40px;
+    position: absolute;
+    top: 0;
+}
+
